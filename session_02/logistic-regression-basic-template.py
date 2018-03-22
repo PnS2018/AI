@@ -134,8 +134,8 @@ preds = np.squeeze(preds, axis=-1).astype(np.int)
 labels = ["Tshirt/top", "Trouser"]
 
 plt.figure()
-for i in xrange(2):
-    for j in xrange(5):
+for i in range(2):
+    for j in range(5):
         plt.subplot(2, 5, i*5+j+1)
         plt.imshow(test_x[i*5+j].reshape(28, 28), cmap="gray")
         plt.title("Ground Truth: %s, \n Prediction %s" %
